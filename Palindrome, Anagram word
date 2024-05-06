@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class HelloWorld 
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter a String");
+        String s=sc.next();
+        char [] ch=s.toCharArray();
+        String s1="";
+        for(int i=ch.length-1;i>=0;i--)
+        {
+            s1=s1+ch[i];
+        }
+        if(s.equals(s1))
+        {
+            System.out.println("Given String is Palindrome/Anagram");
+        }
+        else
+        {
+           System.out.println("Given String is not Palindrome/Anagram"); 
+        }
+     }
+}
