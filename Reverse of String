@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) 
+    {
+        System.out.println("enter a String");
+        Scanner sc=new Scanner(System.in);
+        String a=sc.next();
+        System.out.print("Reverse string is= ");
+        for(int i=a.length()-1;i>=0;i--)
+        {
+            System.out.print(a.charAt(i));
+        }
+    }
+}
