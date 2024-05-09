@@ -1,0 +1,38 @@
+class HelloWorld 
+{
+    public static void main(String[] args) 
+    {
+        String s="hii iti nitin is a good but so repaper";
+        String []s1=s.split(" ");
+        int a=0;
+        int count=0;
+        for(int i=0;i<s1.length;i++)
+        {
+            char []ch=s1[i].toCharArray();
+            {
+                String s2="";
+                for(int j=ch.length-1;j>=0;j--)
+                {
+                    s2=s2+ch[j];
+                }
+                if(s1[i].equals(s2))
+                {
+                    //System.out.println(s2);
+                    int z=s2.length();
+                    if(z>a)
+                    {
+                        a=z;
+                    }
+                }
+            }
+        }
+        for(int k=0;k<s1.length;k++)
+        {
+            if(s1[k].length()==a)
+            {
+                System.out.println("large Palindrome word is= "+s1[k]);
+            }
+        }
+        System.out.println("count of large palindrome words digit is= "+a);
+    }
+}
