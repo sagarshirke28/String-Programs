@@ -9,8 +9,7 @@ class HelloWorld
         for(int i=0;i<s1.length;i++)
         {
             char []ch=s1[i].toCharArray();
-            {
-                String s2="";
+              String s2="";
                 for(int j=ch.length-1;j>=0;j--)
                 {
                     s2=s2+ch[j];
@@ -24,15 +23,20 @@ class HelloWorld
                         a=z;
                     }
                 }
-            }
         }
-        for(int k=0;k<s1.length;k++)
+        for(int i=0;i<s1.length;i++)
         {
-            if(s1[k].length()==a)
-            {
-                System.out.println("large Palindrome word is= "+s1[k]);
-            }
+            char []ch=s1[i].toCharArray();
+                String s2="";
+                for(int j=ch.length-1;j>=0;j--)
+                {
+                    s2=s2+ch[j];
+                }
+                if(s1[i].equals(s2)&& s1[i].length()==a)
+                {
+                   System.out.println("large palindrome word is= "+s1[i]); 
+                }
         }
-        System.out.println("count of large palindrome words digit is= "+a);
+        System.out.println("count of large palindrome word digits is= "+a);
     }
 }
